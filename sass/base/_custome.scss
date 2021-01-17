@@ -1,0 +1,84 @@
+.nav-tabs .nav-link.active {
+    border: none;
+    color: red;
+}
+.nav-tabs .nav-link {
+    &:hover {
+        border: none;
+    }
+
+    &:focus {
+        outline: none;
+        border: none;
+    }
+}
+
+///// card
+.card {
+    border: none;
+    padding: $pd-4 $pd-1;
+    .card-img-top {
+        border-radius: $border-radius;
+    }
+
+    .card-body {
+        padding: 0;
+        padding-top: 10px;
+    }
+}
+
+// <i class="fa fa-chevron-left"></i>
+// OWL-CAROUSEL
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none;
+    color: $color-gray-4;
+}
+
+.owl-prev {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+  
+    left: -62px;
+    background: none;
+    border: none;
+    &:hover{
+        background: none;
+    }
+
+    &:focus {
+        outline: none;
+    }
+    i.fa.fa-chevron-left {
+        @include styleText($color-gray-4,50px,$fw-bold);
+        outline: none;
+      
+    }
+
+}
+
+.owl-next {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+  
+    right: -62px;
+    background: none;
+    border: none;
+
+    &:hover{
+        background: none;
+    }
+
+    &:focus {
+        outline: none;
+    }
+    i.fa.fa-chevron-right {
+        @include styleText($color-gray-4,50px,$fw-bold);
+        outline: none;
+
+      
+    }
+
+}

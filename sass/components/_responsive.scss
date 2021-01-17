@@ -1,0 +1,21 @@
+.full-screen {
+  max-width:940px;
+  margin:0 auto;
+}
+
+// <= 940px
+@include responsive('large') {
+ .full-screen {
+   padding: 0 15px;
+ }
+}
+
+@include responsive('medium') {
+  .full-screen {
+    padding: 0;
+  }
+}
+
+@include responsive('small') {
+  
+}

@@ -1,0 +1,23 @@
+.tix__btn--gray{
+    @include styleButton($color-gray-1, $border-radius, $pd-1, $pd-4 + 5);
+
+    &:focus{
+        outline: $color-black;
+    }
+}
+.tix__btn--orange{
+    @include styleButton(linear-gradient(to left, $color-red-1, $color-red-2), $border-radius, $pd-1, $pd-1);
+
+    &:focus{
+        outline: $color-black;
+    }
+
+    &:hover{
+        background-color: $color-red-1;
+    }
+}
+
+
+
+
+

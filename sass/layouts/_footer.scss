@@ -1,0 +1,203 @@
+footer {
+    background-color: #222222;
+    padding: $pd-4 0;
+    overflow: hidden;
+    .footer__container {
+        .footer__linkText {
+            
+            p {
+                @include styleText($color-white, $fs-2 - 2, $fw-normal);
+                margin-bottom: $mg-2;
+            }
+            .footer__containerLinkText {
+               
+                a {
+                    padding: $pd-1;
+                    height: 27px;
+                    @include styleText($color-gray-3, $fs-2 - 1, $fw-normal);
+                    text-decoration: none;
+                    transition: all 300ms;
+                    &:hover {
+                        @include styleText($color-white, $fs-2 - 1, $fw-bold-2);
+                    }
+                    &:focus {
+                        outline: 5px auto -webkit-focus-ring-color;
+                        outline-offset: -2px;
+                    }
+                }
+            }
+        }
+
+        .footer__linkPartner {
+            p {
+                @include styleText($color-white, $fs-2 - 2, $fw-normal);
+                margin-bottom: $mg-2;
+            }
+            .footer__listPartner {
+                width: 100%;
+                margin-bottom: $mg-3;
+                a {
+                    img {
+                        margin-right: $mg-3;
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 50%;
+                        transition:  all 300ms;
+                    }
+                    &:hover{
+                        opacity: .7;
+                    }
+                    &:focus {
+                        outline: -webkit-focus-ring-color auto 1px;
+                    }
+                }
+            }
+        }
+
+        .footer__support {
+            .footer__supportText {
+                @include styleText($color-white, $fs-2 - 2, $fw-normal);
+                margin-bottom: $mg-2;
+            }
+            .footer__containerOS {
+                .footer__itemOS {
+                    a {
+                        img {
+                            width: 25px;
+                            height: 30px;
+                            margin: $mg-1;
+                        }
+                    }
+                }
+            }
+            .footer__containerSocial {
+                .footer__itemSocial {
+                    a {
+                        img {
+                            width: 30px;
+                            height: 30px;
+                            margin: $mg-1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hrFooter {
+    border-top: 1px solid $color-gray-1;
+    margin: $mg-4 0;
+}
+
+.footer_last{
+    .footer__logoZinon{
+        padding: 0;
+        img{
+            border-radius: 8px;
+            width: 100%;
+            
+        }
+    }
+    .footer__info{
+        .footer__infoTix{
+            height: 21px;
+            @include styleText($color-white,$fs-2 - 1,400);
+        }
+
+        .footer__infomationTix{
+            height: 21px;
+            @include styleText($color-gray-3,$fs-2 - 1,$fw-normal);
+            a{
+                text-decoration: none;
+                @include styleText($color-red-1,$fs-2 - 1,$fw-normal);
+            }
+        }
+    }
+
+    .footer__daThongBao{
+        a{
+            text-align: none;
+            
+        img{
+           
+            padding-right: $pd-1;
+            border-radius: $border-radius;
+            width: 130px;
+        }
+
+        }    
+        }
+
+
+}
+
+// reponsive 
+@include responsive('truelarge'){
+    footer{
+        
+        .footer_last{
+            text-align: center;
+           
+        }
+
+    }
+}
+
+@include responsive('868'){
+    footer{
+        .footer__container{
+            
+            .footer__linkText{
+                text-align: center;
+            a{
+              display: block;
+            }
+            }
+
+            .footer_last{
+                padding: 0 $pd-1;
+            }
+
+        }
+    }
+}
+
+
+@include responsive('medium'){
+    footer{
+        .footer__container{
+            
+            .footer__linkText{
+                text-align: center;
+            a{
+              display: inline;
+            }
+            }
+
+            .footer__support{
+                .footer__itemSocial{
+                    width: 80px;
+                    margin: 0 auto;
+                }
+                
+            }
+
+            .footer_last{
+                text-align: center;
+               
+                .footer__logoZinon{
+                    img{
+                        height: 38px;
+                        width: 80px;
+                    }
+                }
+                .footer__info{
+                    padding-top: $pd-3;
+                }
+            }
+
+        }
+        
+    }
+}

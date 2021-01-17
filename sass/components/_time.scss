@@ -1,0 +1,17 @@
+.time{  
+  @include styleText($color-gray-2, $fs-1, $fw-0);
+  @include styleTime(rgba(246,246,246,.5), $border-radius-0, $pd-0); 
+  text-align:center;
+  display: block;
+  text-decoration: none;
+  margin: 8px 10px 10px 0;
+  border: 1px solid $border-color;
+
+  &:hover {
+    font-size: $color-red-3;
+  }
+  
+  span:first-child {
+  @include styleText($color-green-2, $fs-4, $fw-bold-1);
+  }
+}

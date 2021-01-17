@@ -1,0 +1,95 @@
+// COLOR
+// mau chu binh thuong
+$color-black: #000;
+$color-white: #fff;
+
+//
+$color-body: #333;
+
+// mua ve ngay
+$color-gray-1: #4a4a4a;
+
+// mau fixMenu dang nhap + HO CHI MINH
+$color-gray-2: #9b9b9b;
+// mau gray o footer
+$color-gray-3: #949494;
+
+// mau bieu tuong like commment ơ dien anh 24
+$color-gray-4: #bbb;
+
+// mau ageTag P
+$color-green-0: #00ac4d;
+// mau ten rap BHD STAR
+$color-green-1: #8bc541;
+// mau  thoi gian chieu , 21:45
+$color-green-2: #108f3e;
+
+// dang chieu -- active
+$color-red-1: #fb4226;
+$color-red-2: #ce3017;
+// mau ageTagg C18,C16,  dots owl-carousel
+$color-red-3: #fb4226;
+
+// FONT-SIZE
+
+// font-size body
+$fs-1: 14px;
+
+$fs-2: 13px;
+
+$fs-3: 16px;
+
+$fs-4: 18px;
+
+$fs-5: 20px;
+
+$fs-6: 24px;
+
+$fs-7: 32px;
+
+$fs-8: 12px;
+
+$fs-9: 11.2px;
+
+//variable margin
+$mg-1: 5px;
+$mg-2: 8px;
+$mg-3: 15px;
+$mg-4: 20px;
+
+$mg-5: 25px;
+
+// padding
+$pd-0: 5px;
+$pd-1: 10px;
+$pd-2: 15px;
+$pd-3: 17px;
+$pd-4: 20px;
+
+$pd-5: 120px;
+
+// border
+$border-color: #e4e4e4;
+$border-radius: 4px;
+$border-radius-0: 7px;
+
+//variable line-height
+$line-height-0: 1.43; //default
+
+//variable font-weight
+$fw-normal: normal;
+$fw-0: 400;
+$fw-bold-1: 600;
+$fw-bold-2: 700;
+$fw-bold: bold;
+
+//break points
+$breakpoints: (
+        "truelarge": 991px,
+        "large": 940px,
+        "868":868px,
+        "medium": 768px,
+        "737":737px,
+        "sm":576px,
+        "small": 480px,
+);

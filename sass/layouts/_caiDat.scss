@@ -1,0 +1,184 @@
+.caiDat {
+    margin-top: 35px;
+    background-image: url("../img/caiDat/bg1.jpg");
+    background-size: contain;
+    overflow: hidden;
+
+    .caiDat__container {
+        padding-top: 120px;
+        padding-bottom: 80px;
+
+        .caiDat__left {
+            .caiDat__text {
+                .caiDat__headingText {
+                    @include styleText($color-white, $fs-7, $fw-bold-2);
+                    margin-bottom: $mg-2 + 2;
+                }
+                .caiDat__smallText {
+                    @include styleText($color-white, $fs-3, $fw-normal);
+                    margin-bottom: $mg-2 + 2;
+                }
+            }
+            .caiDat__btnText {
+                // color: red;
+                @include styleButton($color-red-1, $border-radius, $pd-1, $pd-4);
+                @include styleText($color-white, $fs-3, $fw-bold-2);
+                border: none;
+                &:focus {
+                    outline: none;
+                }
+            }
+            .caiDat__bottomText {
+                padding-top: $pd-1;
+                @include styleText($color-white, $fs-2 + 1, $fw-normal);
+                margin-bottom: $mg-2 + 2;
+                .caiDat__linkText {
+                    @include styleText($color-white, $fs-2 + 1, $fw-normal);
+                    text-decoration: none;
+                    border-bottom: 1px solid $color-white;
+                    &:focus {
+                        // outline: ;
+                        outline: 5px auto -webkit-focus-ring-color;
+                        outline-offset: -2px;
+                    }
+                }
+            }
+        }
+
+        .caiDat__right {
+            position: relative;
+            height: 450px;
+            // .owl-carousel.owl-drag .active {
+            //     .caiDat__item{
+            //         img{
+            //             border-radius: 20px;
+            //         }
+            //     }
+            //  }
+
+            .caiDat__rightPhone {
+                height: 437.7px;
+                width: 207px;
+
+                border-radius: 20px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                img {
+                    width: 100%;
+                }
+            }
+
+            .caiDat__carousel {
+                position: absolute;
+                top: 50%;
+                left: 21px;
+                transform: translateY(-50%);
+                height: 422.34px;
+                width: 195px;
+                .owl-stage-outer {
+                    border-radius: 20px;
+                    .caiDat__item {
+                        overflow: hidden;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive("truelarge") {
+    .caiDat {
+        .caiDat__container {
+            text-align: center;
+            .caiDat__right {
+                height: 900px;
+                width: 100%;
+                position: relative;
+                top: 50%;
+                left: 20%;
+
+                .caiDat__rightPhone {
+                    height: 850px;
+                    width: 470px;
+
+      
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+        
+
+                .caiDat__carousel {
+                    left: 25px;
+               
+                    height: 822.34px;
+                    width: 448px;
+                    .owl-stage-outer {
+                        
+                        border-radius: 40px;
+                        .caiDat__item {
+                            overflow: hidden;
+                            img {
+                                height: 817.34px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@include responsive("medium") {
+    .caiDat {
+        .caiDat__container {
+            text-align: center;
+            .caiDat__right {
+                height: 600px;
+                width: 100%;
+                position: relative;
+                top: 50%;
+                left: 24%;
+
+                .caiDat__rightPhone {
+                    height: 534px;
+                    width: 254px;
+
+              
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .caiDat__carousel {
+                    left: 21px;
+               
+                    height: 522px;
+                    width: 242px;
+                    .owl-stage-outer {
+                      
+                        border-radius: 30px;
+                        .caiDat__item {
+                            overflow: hidden;
+                            img {
+                                height: 522px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+        
+            }
+        }
+    }
+}

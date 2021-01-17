@@ -1,0 +1,42 @@
+@mixin styleText($color, $fs, $fw) {
+  color: $color;
+  font-size: $fs;
+  font-weight: $fw;
+}
+
+@mixin styleButton($bg-color, $radius, $py, $px) {
+  background-color: $bg-color;
+  border-radius: $radius;
+  padding: $py $px;
+}
+
+@mixin styleTime($bg-color, $radius, $py,) {
+  background-color: $bg-color;
+  border-radius: $radius;
+  padding: $py;
+}
+
+
+@mixin styleGrid($numberColum, $numberFr) {
+  display: grid;
+  grid-template-columns: repeat($numberColum, $numberFr);
+  gap: 10px 20px;
+  width:100%;
+}
+
+
+//$screen: Biến chứa tên màn hình
+@mixin responsive($screen) {
+  //map-has-key: Kiểm tra có đúng biến trong breakpoints ko
+  @if(map-has-key($map:$breakpoints, $key:$screen)) {
+    //value:  Chứa giá trị màn hình lấy được (vd: 576px)
+    $value:map-get($map:$breakpoints, $key:$screen);
+    @media screen and (max-width:$value) {
+      @content;
+    }
+  }
+  // nếu dùng tool gulp thì phải thông báo!
+  @else {
+    @warn 'Màn hình ko hợp lệ';
+  }
+}
